@@ -1,7 +1,7 @@
 import sys
 import os
 from PyQt5 import QtWidgets
-from VentanaLogin import VentanaLogin
+import VentanaLogin
 
 
 def main():
@@ -13,7 +13,7 @@ def main():
     os.chdir(current_dir)
 
     # Crear y mostrar la ventana de login
-    login = VentanaLogin()
+    login = VentanaLogin.VentanaLogin()
     login.show()
 
     # Ejecutar la aplicación

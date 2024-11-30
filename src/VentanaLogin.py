@@ -14,7 +14,7 @@ class VentanaLogin(QtWidgets.QMainWindow):
 
         # Cargar el archivo UI
         current_dir = os.path.dirname(os.path.abspath(__file__))
-        ui_file = os.path.join(current_dir, 'VentanaLogin.ui')
+        ui_file = os.path.join(current_dir, r'D:\Proyecto final\Ui\VentanaLogin.ui')
         uic.loadUi(ui_file, self)
 
         # Configurar ventana sin bordes
