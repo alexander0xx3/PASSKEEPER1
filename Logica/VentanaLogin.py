@@ -1,5 +1,5 @@
 
-from PyQt5 import QtCore, QtGui, QtWidgets, uic
+from PyQt5 import uic
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QMessageBox
@@ -96,17 +96,17 @@ class Ui_WindowLogin(object):
         self.label.setGeometry(QtCore.QRect(0, 0, 351, 470))
         self.label.setAutoFillBackground(False)
         self.label.setStyleSheet("\n"
-"border-image: url(:/imagenes/arbolde-sakura-en-japon-anime-zuhr2aledzyd5wso.webp);\n"
-"border-top-left-radius: 50px;")
+            "border-image: url(:/imagenes/arbolde-sakura-en-japon-anime-zuhr2aledzyd5wso.webp);\n"
+            "border-top-left-radius: 50px;")
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(self.widget)
         self.label_2.setGeometry(QtCore.QRect(310, 0, 290, 470))
         self.label_2.setStyleSheet("\n"
-"\n"
-"background-color: rgba(255, 255, 255, 1); /* Fondo blanco */  \n"
-"    border-bottom-right-radius: 70px; /* Esquina inferior derecha redondeada */  \n"
-"    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */  \n"
-"    padding: 20px; ")
+            "\n"
+            "background-color: rgba(255, 255, 255, 1); /* Fondo blanco */  \n"
+            "    border-bottom-right-radius: 70px; /* Esquina inferior derecha redondeada */  \n"
+            "    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */  \n"
+            "    padding: 20px; ")
         self.label_2.setFrameShape(QtWidgets.QFrame.Panel)
         self.label_2.setText("")
         self.label_2.setObjectName("label_2")
@@ -127,36 +127,36 @@ class Ui_WindowLogin(object):
         self.lineEdit_usuario = QtWidgets.QLineEdit(self.widget)
         self.lineEdit_usuario.setGeometry(QtCore.QRect(350, 200, 195, 40))
         self.lineEdit_usuario.setStyleSheet("\n"
-"    background-color: rgba(0, 0, 0, 0); /* Fondo transparente */  \n"
-"    border: none; /* Sin borde por defecto */  \n"
-"    border-bottom: 2px solid rgba(46, 82, 101, 0.8); /* Borde inferior con color */  \n"
-"    color: rgba(0, 0, 0, 0.94); /* Color del texto */  \n"
-"    padding-bottom: 20px; /* Espacio inferior dentro del QLineEdit */  \n"
-"")
+            "    background-color: rgba(0, 0, 0, 0); /* Fondo transparente */  \n"
+            "    border: none; /* Sin borde por defecto */  \n"
+            "    border-bottom: 2px solid rgba(46, 82, 101, 0.8); /* Borde inferior con color */  \n"
+            "    color: rgba(0, 0, 0, 0.94); /* Color del texto */  \n"
+            "    padding-bottom: 20px; /* Espacio inferior dentro del QLineEdit */  \n"
+            "")
         self.lineEdit_usuario.setObjectName("lineEdit_usuario")
         self.lineEdit_contrasena = QtWidgets.QLineEdit(self.widget)
         self.lineEdit_contrasena.setGeometry(QtCore.QRect(350, 260, 195, 40))
         self.lineEdit_contrasena.setStyleSheet("\n"
-"    background-color: rgba(0, 0, 0, 0); /* Fondo transparente */  \n"
-"    border: none; /* Sin borde por defecto */  \n"
-"    border-bottom: 2px solid rgba(46, 82, 101, 0.8); /* Borde inferior con color */  \n"
-"    color: rgba(0, 0, 0, 0.94); /* Color del texto */  \n"
-"    padding-bottom: 20px; /* Espacio inferior dentro del QLineEdit */  \n"
-"")
+            "    background-color: rgba(0, 0, 0, 0); /* Fondo transparente */  \n"
+            "    border: none; /* Sin borde por defecto */  \n"
+            "    border-bottom: 2px solid rgba(46, 82, 101, 0.8); /* Borde inferior con color */  \n"
+            "    color: rgba(0, 0, 0, 0.94); /* Color del texto */  \n"
+            "    padding-bottom: 20px; /* Espacio inferior dentro del QLineEdit */  \n"
+            "")
         self.lineEdit_contrasena.setText("")
         self.lineEdit_contrasena.setObjectName("lineEdit_contrasena")
         self.pushButton_iniciarSesion = QtWidgets.QPushButton(self.widget)
         self.pushButton_iniciarSesion.setGeometry(QtCore.QRect(390, 320, 111, 31))
         self.pushButton_iniciarSesion.setStyleSheet("\n"
-"    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,   \n"
-"                                       stop: 0 rgba(135, 206, 250, 255),   \n"
-"                                       stop: 1 rgba(70, 130, 180, 255)); /* Degradado celeste */  \n"
-"    color: rgba(255, 255, 255, 240); /* Color del texto */  \n"
-"    border: none; /* Sin borde */  \n"
-"    padding: 10px; /* Espaciado interno del botón */  \n"
-"    border-radius: 5px; /* Esquinas redondeadas (opcional) */  \n"
-"\n"
-"")
+            "    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,   \n"
+            "                                       stop: 0 rgba(135, 206, 250, 255),   \n"
+            "                                       stop: 1 rgba(70, 130, 180, 255)); /* Degradado celeste */  \n"
+            "    color: rgba(255, 255, 255, 240); /* Color del texto */  \n"
+            "    border: none; /* Sin borde */  \n"
+            "    padding: 10px; /* Espaciado interno del botón */  \n"
+            "    border-radius: 5px; /* Esquinas redondeadas (opcional) */  \n"
+            "\n"
+            "")
         self.pushButton_iniciarSesion.setAutoDefault(False)
         self.pushButton_iniciarSesion.setObjectName("pushButton_iniciarSesion")
         self.label_5 = QtWidgets.QLabel(self.widget)
@@ -166,15 +166,15 @@ class Ui_WindowLogin(object):
         self.pushButton_registrarse = QtWidgets.QPushButton(self.widget)
         self.pushButton_registrarse.setGeometry(QtCore.QRect(390, 400, 111, 31))
         self.pushButton_registrarse.setStyleSheet("\n"
-"    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,   \n"
-"                                       stop: 0 rgba(144, 238, 144, 255), /* Verde claro */  \n"
-"                                       stop: 1 rgba(34, 139, 34, 255)); /* Verde oscuro */  \n"
-"    color: rgba(255, 255, 255, 240); /* Color del texto */  \n"
-"    border: none; /* Sin borde */  \n"
-"    padding: 10px; /* Espaciado interno del botón */  \n"
-"    border-radius: 5px; /* Esquinas redondeadas */  \n"
-"\n"
-"")
+            "    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,   \n"
+            "                                       stop: 0 rgba(144, 238, 144, 255), /* Verde claro */  \n"
+            "                                       stop: 1 rgba(34, 139, 34, 255)); /* Verde oscuro */  \n"
+            "    color: rgba(255, 255, 255, 240); /* Color del texto */  \n"
+            "    border: none; /* Sin borde */  \n"
+            "    padding: 10px; /* Espaciado interno del botón */  \n"
+            "    border-radius: 5px; /* Esquinas redondeadas */  \n"
+            "\n"
+            "")
         self.pushButton_registrarse.setAutoDefault(False)
         self.pushButton_registrarse.setObjectName("pushButton_registrarse")
         WindowLogin.setCentralWidget(self.centralwidget)

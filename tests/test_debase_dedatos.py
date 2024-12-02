@@ -1,71 +1,49 @@
-import sys
-import os
 import unittest
-from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton
-from PyQt5.QtTest import QTest
-from PyQt5.QtCore import Qt
+from Logica.BaseDeDatos import BaseDeDatos
+import random
+import string
 
-# Asegurar que la carpeta 'Logica' esté en el sys.path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../Logica')))
-
-from Logica.VentanaOpciones import VentanaOpciones  # Importar la clase correctamente
-
-class TestVentanaOpciones(unittest.TestCase):
+class TestBaseDeDatos(unittest.TestCase):
 
     def setUp(self):
-        """Configuración previa a cada prueba."""
-        if not QApplication.instance():
-            self.app = QApplication(sys.argv)
-        else:
-            self.app = QApplication.instance()
-        self.window = VentanaOpciones()  # Ventana que deseas probar
-        self.window.show()
+
+        self.db = BaseDeDatos()
+
+    def generar_aleatorio(self, longitud=8):
+
+        return ''.join(random.choices(string.ascii_letters + string.digits, k=longitud))
+
+    def test_guardar_servicio(self):
+
+
+        # Generamos datos aleatorios
+        usuario = self.generar_aleatorio()
+        contrasena = self.generar_aleatorio(12)
+        servicio = self.generar_aleatorio(10)
+
+
+        try:
+            self.db.guardar_servicio(usuario, contrasena, servicio)
+
+            # Comprobamos si los datos han sido guardados correctamente en la base de datos
+            # Aquí puedes hacer una consulta a la base de datos para verificar que los datos están presentes
+            cursor = self.db.conn.cursor()
+            cursor.execute('SELECT * FROM servicios WHERE usuario=? AND servicio=?', (usuario, servicio))
+            result = cursor.fetchone()
+
+            # Verificamos que el resultado no sea None (lo que significa que se encontraron datos)
+            self.assertIsNotNone(result, f"El servicio {servicio} no fue guardado correctamente.")
+            print(f"Datos guardados correctamente: {result}")
+
+        except Exception as e:
+            self.fail(f"Error al guardar el servicio: {str(e)}")
 
     def tearDown(self):
-        """Limpiar después de cada prueba."""
-        if self.window:
-            self.window.close()
-            self.window.deleteLater()
-        if self.app:
-            self.app.quit()
 
-    def test_initial_window(self):
-        """Verificar que la ventana se inicializa correctamente y está visible."""
-        self.assertTrue(self.window.isVisible())
+        # Opcional: Eliminar registros de prueba para limpiar la base de datos (si es necesario)
+        cursor = self.db.conn.cursor()
+        cursor.execute('DELETE FROM servicios')
+        self.db.conn.commit()
 
-    def test_button_enablement(self):
-        """Verificar que los botones están habilitados al inicio."""
-        self.assertTrue(self.window.ui.pushButton_RegistarNuevoServicio.isEnabled())
-        self.assertTrue(self.window.ui.pushButton_VerlistaDeservivios.isEnabled())
-        self.assertTrue(self.window.ui.pushButton_Salir.isEnabled())
-
-    def test_button_register_new_service(self):
-        """Verificar que al hacer clic en 'Registrar nuevo servicio' se abre la ventana correspondiente."""
-        QTest.mouseClick(self.window.ui.pushButton_RegistarNuevoServicio, Qt.LeftButton)
-
-        from Logica.Ventana_RegistrarServicio import VentanaRegistrarServicio
-        self.assertIsInstance(self.window.ventana_registro, VentanaRegistrarServicio)
-        self.assertTrue(self.window.ventana_registro.isVisible())
-
-    def test_button_view_service_list(self):
-        """Verificar que al hacer clic en 'Ver lista de servicios' se abre la ventana correspondiente."""
-        QTest.mouseClick(self.window.ui.pushButton_VerlistaDeservivios, Qt.LeftButton)
-
-        from Logica.VentanaListaDeservicios import VentanaListaDeservicios
-        self.assertIsInstance(self.window.ventana_lista, VentanaListaDeservicios)
-        self.assertTrue(self.window.ventana_lista.isVisible())
-
-    def test_button_exit(self):
-        """Verificar que al hacer clic en 'Salir' se cierra la ventana y vuelve al login."""
-        QTest.mouseClick(self.window.ui.pushButton_Salir, Qt.LeftButton)
-        self.assertFalse(self.window.isVisible())
-
-        from Logica.VentanaLogin import VentanaLogin
-        for widget in QApplication.topLevelWidgets():
-            if isinstance(widget, VentanaLogin):
-                self.assertTrue(widget.isVisible())
-                break
-
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

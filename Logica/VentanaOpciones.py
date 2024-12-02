@@ -70,19 +70,19 @@ class Ui_Window_opciones(object):
         self.label = QtWidgets.QLabel(self.widget)
         self.label.setGeometry(QtCore.QRect(250, 0, 291, 491))
         self.label.setStyleSheet("\n"
-"border-image: url(:/imagenes/japonanime-ciudad-pastel-fjnhzk0ixe2x3cub.webp);\n"
-"border-top-right-radius: 50px;\n"
-"\n"
-"                     border-bottom-right-radius: 50px;\n"
-"                     border: 1px solid #ccc;")
+            "border-image: url(:/imagenes/japonanime-ciudad-pastel-fjnhzk0ixe2x3cub.webp);\n"
+            "border-top-right-radius: 50px;\n"
+            "\n"
+            "                     border-bottom-right-radius: 50px;\n"
+            "                     border: 1px solid #ccc;")
         self.label.setText("")
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(self.widget)
         self.label_2.setGeometry(QtCore.QRect(0, 0, 271, 491))
         self.label_2.setStyleSheet("background-color: rgba(255, 255, 255, 1);\n"
-"               border-bottom-left-radius: 50px;\n"
-"border-top-left-radius: 50px;\n"
-"                     border: 1px solid #ccc;")
+            "               border-bottom-left-radius: 50px;\n"
+            "border-top-left-radius: 50px;\n"
+            "                     border: 1px solid #ccc;")
         self.label_2.setText("")
         self.label_2.setObjectName("label_2")
         self.label_3 = QtWidgets.QLabel(self.widget)
@@ -92,9 +92,9 @@ class Ui_Window_opciones(object):
         font.setPointSize(38)
         self.label_3.setFont(font)
         self.label_3.setStyleSheet("background-color:rgba(0,0,0,75);\n"
-"\n"
-"border-top-left-radius: 50px;\n"
-"border-top-right-radius: 50px;")
+            "\n"
+            "border-top-left-radius: 50px;\n"
+            "border-top-right-radius: 50px;")
         self.label_3.setText("")
         self.label_3.setObjectName("label_3")
         self.label_4 = QtWidgets.QLabel(self.widget)
@@ -112,30 +112,30 @@ class Ui_Window_opciones(object):
         font.setPointSize(8)
         self.pushButton_RegistarNuevoServicio.setFont(font)
         self.pushButton_RegistarNuevoServicio.setStyleSheet("    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,   \n"
-"                                       stop: 0 rgba(186, 85, 211, 255), /* Violeta claro */\n"
-"                                       stop: 1 rgba(138, 43, 226, 255)); /* Violeta oscuro */\n"
-"    color: rgba(255, 255, 255, 240); /* Texto blanco */\n"
-"    border: none;  \n"
-"    padding: 12px 20px;  \n"
-"    border-radius: 5px;  \n"
-"\n"
-"\n"
-"    cursor: pointer;\n"
-"    transition: background-color 0.3s ease, transform 0.2s ease;")
+            "                                       stop: 0 rgba(186, 85, 211, 255), /* Violeta claro */\n"
+            "                                       stop: 1 rgba(138, 43, 226, 255)); /* Violeta oscuro */\n"
+            "    color: rgba(255, 255, 255, 240); /* Texto blanco */\n"
+            "    border: none;  \n"
+            "    padding: 12px 20px;  \n"
+            "    border-radius: 5px;  \n"
+            "\n"
+            "\n"
+            "    cursor: pointer;\n"
+            "    transition: background-color 0.3s ease, transform 0.2s ease;")
         self.pushButton_RegistarNuevoServicio.setObjectName("pushButton_RegistarNuevoServicio")
         self.pushButton_VerlistaDeservivios = QtWidgets.QPushButton(self.widget)
         self.pushButton_VerlistaDeservivios.setEnabled(False)
         self.pushButton_VerlistaDeservivios.setGeometry(QtCore.QRect(90, 270, 160, 61))
         self.pushButton_VerlistaDeservivios.setStyleSheet(" background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,   \n"
-"                                       stop: 0 rgba(138, 43, 226, 255), /* Violeta */\n"
-"                                       stop: 1 rgba(186, 85, 211, 255)); /* Violeta más claro */\n"
-"    color: rgba(255, 255, 255, 240); /* Texto blanco */\n"
-"    border: none;  \n"
-"    padding: 12px 20px;  \n"
-"    border-radius: 5px;  \n"
-"  \n"
-"    cursor: pointer;\n"
-"    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */")
+            "                                       stop: 0 rgba(138, 43, 226, 255), /* Violeta */\n"
+            "                                       stop: 1 rgba(186, 85, 211, 255)); /* Violeta más claro */\n"
+            "    color: rgba(255, 255, 255, 240); /* Texto blanco */\n"
+            "    border: none;  \n"
+            "    padding: 12px 20px;  \n"
+            "    border-radius: 5px;  \n"
+            "  \n"
+            "    cursor: pointer;\n"
+            "    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */")
         self.pushButton_VerlistaDeservivios.setObjectName("pushButton_VerlistaDeservivios")
         self.pushButton_Salir = QtWidgets.QPushButton(self.widget)
         self.pushButton_Salir.setEnabled(False)
@@ -143,16 +143,16 @@ class Ui_Window_opciones(object):
         font = QtGui.QFont()
         self.pushButton_Salir.setFont(font)
         self.pushButton_Salir.setStyleSheet("background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,   \n"
-"                                       stop: 0 rgba(186, 85, 211, 255), /* Violeta claro */\n"
-"                                       stop: 1 rgba(169, 169, 169, 255)); /* Gris suave */\n"
-"    color: rgba(255, 255, 255, 240); /* Texto blanco */\n"
-"    border: none;  \n"
-"    padding: 12px 20px;  \n"
-"    border-radius: 5px;  \n"
-"\n"
-"    text-transform: uppercase; \n"
-"    cursor: pointer;\n"
-"    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */")
+                "                                       stop: 0 rgba(186, 85, 211, 255), /* Violeta claro */\n"
+                "                                       stop: 1 rgba(169, 169, 169, 255)); /* Gris suave */\n"
+                "    color: rgba(255, 255, 255, 240); /* Texto blanco */\n"
+                "    border: none;  \n"
+                "    padding: 12px 20px;  \n"
+                "    border-radius: 5px;  \n"
+                "\n"
+                "    text-transform: uppercase; \n"
+                "    cursor: pointer;\n"
+                "    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */")
         self.pushButton_Salir.setObjectName("pushButton_Salir")
         self.label_5 = QtWidgets.QLabel(self.widget)
         self.label_5.setGeometry(QtCore.QRect(70, 110, 161, 41))

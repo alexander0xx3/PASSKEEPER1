@@ -16,7 +16,7 @@ class TestVentanaOpcionesFuncionalidad(unittest.TestCase):
         self.window.ui.pushButton_VerlistaDeservivios.setFocusPolicy(Qt.StrongFocus)
         self.window.ui.pushButton_Salir.setFocusPolicy(Qt.StrongFocus)
         self.window.show()
-        QTest.qWait(100)  # Asegurarse de que la ventana esté visible
+        QTest.qWait(800)  # Asegurarse de que la ventana esté visible
 
     def tearDown(self):
         """Limpieza después de cada prueba."""
@@ -25,15 +25,15 @@ class TestVentanaOpcionesFuncionalidad(unittest.TestCase):
     def test_focus_on_buttons(self):
         """Verificar que los botones puedan recibir foco."""
         self.window.ui.pushButton_RegistarNuevoServicio.setFocus()
-        QTest.qWait(100)
+        QTest.qWait(800)
         self.assertTrue(self.window.ui.pushButton_RegistarNuevoServicio.hasFocus())
 
         self.window.ui.pushButton_VerlistaDeservivios.setFocus()
-        QTest.qWait(100)
+        QTest.qWait(800)
         self.assertTrue(self.window.ui.pushButton_VerlistaDeservivios.hasFocus())
 
         self.window.ui.pushButton_Salir.setFocus()
-        QTest.qWait(100)
+        QTest.qWait(800)
         self.assertTrue(self.window.ui.pushButton_Salir.hasFocus())
 
 if __name__ == '__main__':

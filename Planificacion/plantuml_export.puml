@@ -1,0 +1,55 @@
+digraph UMLDiagram {
+    rankdir=TB;
+    node [shape=record, fontname="Arial"];
+
+    Usuario [label="{Usuario| 
+        + idUsuario: String \l
+        + nombre: String \l
+        + email: String \l
+        |
+        + getIdUsuario(): String \l
+        + setIdUsuario(id: String): void \l
+        + getNombre(): String \l
+        + setNombre(nombre: String): void \l
+        Usuario()
+    }"];
+
+    Contraseña [label="{Contraseña| 
+        + idContraseña: String \l
+        + nombreCuenta: String \l
+        + contrasenaCifrada: String \l
+        |
+        + getIdContraseña(): String \l
+        + setIdContraseña(id: String): void \l
+        + getNombreCuenta(): String \l
+        + setNombreCuenta(nombre: String): void \l
+        Contraseña()
+    }"];
+
+    RegistroUso [label="{RegistroUso| 
+        + idRegistro: String \l
+        + fecha: Date \l
+        + accion: String \l
+        |
+        + getIdRegistro(): String \l
+        + setIdRegistro(id: String): void \l
+        RegistroUso()
+    }"];
+
+    Configuracion [label="{Configuracion| 
+        + idConfiguracion: String \l
+        + opciones: String \l
+        |
+        + getIdConfiguracion(): String \l
+        + setIdConfiguracion(id: String): void \l
+        Configuracion()
+    }"];
+
+
+
+    // Relaciones entre las clases
+    Usuario -> Contraseña [label="tiene" arrowhead="crow" headlabel="0..*"];
+    Usuario -> RegistroUso [label="realiza" arrowhead="crow" headlabel="0..*"];
+    Usuario -> Configuracion [label="tiene" arrowhead="crow" headlabel="1"];
+
+}

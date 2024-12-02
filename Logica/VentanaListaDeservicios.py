@@ -100,28 +100,28 @@ class Ui_Window_ListaDeservicios(object):
         self.label = QtWidgets.QLabel(self.widget)
         self.label.setGeometry(QtCore.QRect(0, -10, 241, 441))
         self.label.setStyleSheet("background-color: rgba(255, 255, 255, 1); /* Fondo blanco */  \n"
-"    border-bottom-left-radius: 50px; /* Esquina inferior derecha redondeada */  \n"
-"  border-up-left-radius: 50px; /* Esquina inferior derecha redondeada */  \n"
-"    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */  \n"
-"    padding: 20px; \n"
-"border-top-left-radius: 50px;\n"
-"                     border: 1px solid #ccc;\n"
-"\n"
-"border-image: url(:/imagenes/chill_guy_meme_iphone_anime_hd_4k_paisajes_naturales_y_atardecer_art.jpg);")
+            "    border-bottom-left-radius: 50px; /* Esquina inferior derecha redondeada */  \n"
+            "  border-up-left-radius: 50px; /* Esquina inferior derecha redondeada */  \n"
+            "    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */  \n"
+            "    padding: 20px; \n"
+            "border-top-left-radius: 50px;\n"
+            "                     border: 1px solid #ccc;\n"
+            "\n"
+            "border-image: url(:/imagenes/chill_guy_meme_iphone_anime_hd_4k_paisajes_naturales_y_atardecer_art.jpg);")
         self.label.setText("")
         self.label.setObjectName("label")
         self.label_3 = QtWidgets.QLabel(self.widget)
         self.label_3.setGeometry(QtCore.QRect(240, 0, 451, 431))
         self.label_3.setStyleSheet("background-color: rgb(208, 208, 208);\n"
-"\n"
-"\n"
-"    border-bottom-right-radius: 50px; /* Esquina inferior derecha redondeada */  \n"
-"    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */  \n"
-"    padding: 20px; \n"
-"\n"
-"\n"
-"border-top-right-radius: 50px;\n"
-"                     border: 1px solid #ccc;")
+            "\n"
+            "\n"
+            "    border-bottom-right-radius: 50px; /* Esquina inferior derecha redondeada */  \n"
+            "    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */  \n"
+            "    padding: 20px; \n"
+            "\n"
+            "\n"
+            "border-top-right-radius: 50px;\n"
+            "                     border: 1px solid #ccc;")
         self.label_3.setText("")
         self.label_3.setObjectName("label_3")
         self.label_9 = QtWidgets.QLabel(self.widget)
@@ -160,64 +160,64 @@ class Ui_Window_ListaDeservicios(object):
         self.pushButton_editar.setStyleSheet("background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,  \n"
 "                                       stop: 0 rgba(255, 94, 77, 255),  /* Naranja cálido */\n"
 "                                       stop: 1 rgba(255, 159, 64, 255)); /* Amarillo suave */\n"
-"    color: white; /* Texto blanco */\n"
-"    border: none;\n"
-"    padding: 12px 20px;\n"
-"    border-radius: 5px;\n"
-"    font-size: 16px;\n"
-"    font-weight: bold; \n"
-"    text-transform: uppercase;\n"
-"    cursor: pointer;\n"
-"    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */\n"
-"")
+            "    color: white; /* Texto blanco */\n"
+            "    border: none;\n"
+            "    padding: 12px 20px;\n"
+            "    border-radius: 5px;\n"
+            "    font-size: 16px;\n"
+            "    font-weight: bold; \n"
+            "    text-transform: uppercase;\n"
+            "    cursor: pointer;\n"
+            "    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */\n"
+            "")
         self.pushButton_editar.setAutoDefault(False)
         self.pushButton_editar.setObjectName("pushButton_editar")
         self.pushButton_eliminar = QtWidgets.QPushButton(self.widget)
         self.pushButton_eliminar.setGeometry(QtCore.QRect(140, 300, 131, 41))
         self.pushButton_eliminar.setStyleSheet("background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,  \n"
-"                                       stop: 0 rgba(255, 0, 0, 255),   /* Rojo intenso */\n"
-"                                       stop: 1 rgba(178, 34, 34, 255)); /* Rojo oscuro */\n"
-"    color: white; /* Texto blanco */\n"
-"    border: none;\n"
-"    padding: 12px 20px;\n"
-"    border-radius: 5px;\n"
-"    font-size: 16px;\n"
-"    font-weight: bold;\n"
-"    text-transform: uppercase;\n"
-"    cursor: pointer;\n"
-"    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */")
+            "                                       stop: 0 rgba(255, 0, 0, 255),   /* Rojo intenso */\n"
+            "                                       stop: 1 rgba(178, 34, 34, 255)); /* Rojo oscuro */\n"
+            "    color: white; /* Texto blanco */\n"
+            "    border: none;\n"
+            "    padding: 12px 20px;\n"
+            "    border-radius: 5px;\n"
+            "    font-size: 16px;\n"
+            "    font-weight: bold;\n"
+            "    text-transform: uppercase;\n"
+            "    cursor: pointer;\n"
+            "    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */")
         self.pushButton_eliminar.setAutoDefault(False)
         self.pushButton_eliminar.setObjectName("pushButton_eliminar")
         self.pushButton_desencriptar = QtWidgets.QPushButton(self.widget)
         self.pushButton_desencriptar.setGeometry(QtCore.QRect(140, 360, 141, 41))
         self.pushButton_desencriptar.setStyleSheet("background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,  \n"
-"                                       stop: 0 rgba(70, 130, 180, 255),  /* Azul claro */\n"
-"                                       stop: 1 rgba(25, 25, 112, 255)); /* Azul oscuro */\n"
-"    color: white; /* Texto blanco */\n"
-"    border: none;\n"
-"    padding: 12px 20px;\n"
-"    border-radius: 5px;\n"
-"    font-size: 12px;\n"
-"    font-weight: bold;\n"
-"    text-transform: uppercase;\n"
-"    cursor: pointer;\n"
-"    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */")
+            "                                       stop: 0 rgba(70, 130, 180, 255),  /* Azul claro */\n"
+            "                                       stop: 1 rgba(25, 25, 112, 255)); /* Azul oscuro */\n"
+            "    color: white; /* Texto blanco */\n"
+            "    border: none;\n"
+            "    padding: 12px 20px;\n"
+            "    border-radius: 5px;\n"
+            "    font-size: 12px;\n"
+            "    font-weight: bold;\n"
+            "    text-transform: uppercase;\n"
+            "    cursor: pointer;\n"
+            "    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */")
         self.pushButton_desencriptar.setAutoDefault(False)
         self.pushButton_desencriptar.setObjectName("pushButton_desencriptar")
         self.pushButton_volver = QtWidgets.QPushButton(self.widget)
         self.pushButton_volver.setGeometry(QtCore.QRect(510, 370, 141, 41))
         self.pushButton_volver.setStyleSheet("   background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,  \n"
-"                                       stop: 0 rgba(138, 43, 226, 255),  /* Morado */\n"
-"                                       stop: 1 rgba(255, 105, 180, 255)); /* Rosa */\n"
-"    color: white; /* Texto blanco */\n"
-"    border: none;\n"
-"    padding: 12px 20px;\n"
-"    border-radius: 5px;\n"
-"    font-size: 16px;\n"
-"    font-weight: bold;\n"
-"    text-transform: uppercase;\n"
-"    cursor: pointer;\n"
-"    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */")
+            "                                       stop: 0 rgba(138, 43, 226, 255),  /* Morado */\n"
+            "                                       stop: 1 rgba(255, 105, 180, 255)); /* Rosa */\n"
+            "    color: white; /* Texto blanco */\n"
+            "    border: none;\n"
+            "    padding: 12px 20px;\n"
+            "    border-radius: 5px;\n"
+            "    font-size: 16px;\n"
+            "    font-weight: bold;\n"
+            "    text-transform: uppercase;\n"
+            "    cursor: pointer;\n"
+            "    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */")
         self.pushButton_volver.setAutoDefault(False)
         self.pushButton_volver.setObjectName("pushButton_volver")
         self.label_4 = QtWidgets.QLabel(self.widget)

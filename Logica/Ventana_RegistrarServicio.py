@@ -63,51 +63,51 @@ class Ui_Window_RegistrarServicio(object):
         self.label = QtWidgets.QLabel(self.widget)
         self.label.setGeometry(QtCore.QRect(0, 0, 231, 431))
         self.label.setStyleSheet("border-image: url(:/imagenes/chill_guy.jpg);\n"
-"\n"
-"\n"
-"background-color: rgba(255, 255, 255, 1); /* Fondo blanco */  \n"
-"    border-bottom-left-radius: 50px; /* Esquina inferior derecha redondeada */  \n"
-"  border-up-left-radius: 50px; /* Esquina inferior derecha redondeada */  \n"
-"    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */  \n"
-"    padding: 20px; \n"
-"border-top-left-radius: 50px;\n"
+            "\n"
+            "\n"
+            "background-color: rgba(255, 255, 255, 1); /* Fondo blanco */  \n"
+            "    border-bottom-left-radius: 50px; /* Esquina inferior derecha redondeada */  \n"
+            "  border-up-left-radius: 50px; /* Esquina inferior derecha redondeada */  \n"
+            "    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */  \n"
+            "    padding: 20px; \n"
+            "border-top-left-radius: 50px;\n"
 "                     border: 1px solid #ccc;")
         self.label.setText("")
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(self.widget)
         self.label_2.setGeometry(QtCore.QRect(210, 0, 281, 431))
         self.label_2.setStyleSheet("\n"
-"\n"
-"background-color: rgba(255, 255, 255, 1); /* Fondo blanco */  \n"
-"    border-bottom-right-radius: 70px; /* Esquina inferior derecha redondeada */  \n"
-"    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */  \n"
-"    padding: 20px; \n"
-"\n"
-"\n"
-"border-top-right-radius: 50px;\n"
-"                     border: 1px solid #ccc;")
+            "\n"
+            "background-color: rgba(255, 255, 255, 1); /* Fondo blanco */  \n"
+            "    border-bottom-right-radius: 70px; /* Esquina inferior derecha redondeada */  \n"
+            "    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */  \n"
+            "    padding: 20px; \n"
+            "\n"
+            "\n"
+            "border-top-right-radius: 50px;\n"
+            "                     border: 1px solid #ccc;")
         self.label_2.setText("")
         self.label_2.setObjectName("label_2")
         self.lineEdit_contrasena = QtWidgets.QLineEdit(self.widget)
         self.lineEdit_contrasena.setGeometry(QtCore.QRect(260, 220, 195, 40))
         self.lineEdit_contrasena.setStyleSheet("\n"
-"    background-color: rgba(0, 0, 0, 0); /* Fondo transparente */  \n"
-"    border: none; /* Sin borde por defecto */  \n"
-"    border-bottom: 2px solid rgba(46, 82, 101, 0.8); /* Borde inferior con color */  \n"
-"    color: rgba(0, 0, 0, 0.94); /* Color del texto */  \n"
-"    padding-bottom: 20px; /* Espacio inferior dentro del QLineEdit */  \n"
-"")
+            "    background-color: rgba(0, 0, 0, 0); /* Fondo transparente */  \n"
+            "    border: none; /* Sin borde por defecto */  \n"
+            "    border-bottom: 2px solid rgba(46, 82, 101, 0.8); /* Borde inferior con color */  \n"
+            "    color: rgba(0, 0, 0, 0.94); /* Color del texto */  \n"
+            "    padding-bottom: 20px; /* Espacio inferior dentro del QLineEdit */  \n"
+            "")
         self.lineEdit_contrasena.setText("")
         self.lineEdit_contrasena.setObjectName("lineEdit_contrasena")
         self.lineEdit_usuario = QtWidgets.QLineEdit(self.widget)
         self.lineEdit_usuario.setGeometry(QtCore.QRect(260, 170, 195, 40))
         self.lineEdit_usuario.setStyleSheet("\n"
-"    background-color: rgba(0, 0, 0, 0); /* Fondo transparente */  \n"
-"    border: none; /* Sin borde por defecto */  \n"
-"    border-bottom: 2px solid rgba(46, 82, 101, 0.8); /* Borde inferior con color */  \n"
-"    color: rgba(0, 0, 0, 0.94); /* Color del texto */  \n"
-"    padding-bottom: 20px; /* Espacio inferior dentro del QLineEdit */  \n"
-"")
+            "    background-color: rgba(0, 0, 0, 0); /* Fondo transparente */  \n"
+            "    border: none; /* Sin borde por defecto */  \n"
+            "    border-bottom: 2px solid rgba(46, 82, 101, 0.8); /* Borde inferior con color */  \n"
+            "    color: rgba(0, 0, 0, 0.94); /* Color del texto */  \n"
+            "    padding-bottom: 20px; /* Espacio inferior dentro del QLineEdit */  \n"
+            "")
         self.lineEdit_usuario.setObjectName("lineEdit_usuario")
         self.label_6 = QtWidgets.QLabel(self.widget)
         self.label_6.setGeometry(QtCore.QRect(250, 50, 251, 81))
@@ -122,27 +122,27 @@ class Ui_Window_RegistrarServicio(object):
 "                                       stop: 0 rgba(255, 94, 77, 255),  /* Naranja cálido */\n"
 "                                       stop: 0.5 rgba(255, 159, 64, 255), /* Amarillo suave */\n"
 "                                       stop: 1 rgba(70, 130, 180, 255)); /* Azul suave del atardecer */\n"
-"    color: rgba(255, 255, 255, 240); /* Texto blanco */\n"
-"    border: none;  /* Sin borde */\n"
-"    padding: 12px 20px;  /* Espaciado interno del botón */\n"
-"    border-radius: 5px;  /* Esquinas redondeadas */\n"
-"    font-size: 16px;  /* Tamaño de texto */\n"
-"    font-weight: bold;  /* Texto en negrita */\n"
-"    text-transform: uppercase;  /* Texto en mayúsculas */\n"
-"    cursor: pointer;  /* Cursor de mano */\n"
-"    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */\n"
-"")
+                "    color: rgba(255, 255, 255, 240); /* Texto blanco */\n"
+                "    border: none;  /* Sin borde */\n"
+                "    padding: 12px 20px;  /* Espaciado interno del botón */\n"
+                "    border-radius: 5px;  /* Esquinas redondeadas */\n"
+                "    font-size: 16px;  /* Tamaño de texto */\n"
+                "    font-weight: bold;  /* Texto en negrita */\n"
+                "    text-transform: uppercase;  /* Texto en mayúsculas */\n"
+                "    cursor: pointer;  /* Cursor de mano */\n"
+                "    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */\n"
+                "")
         self.pushButton_guardar.setAutoDefault(False)
         self.pushButton_guardar.setObjectName("pushButton_guardar")
         self.lineEdit_servicio = QtWidgets.QLineEdit(self.widget)
         self.lineEdit_servicio.setGeometry(QtCore.QRect(260, 280, 195, 40))
         self.lineEdit_servicio.setStyleSheet("\n"
-"    background-color: rgba(0, 0, 0, 0); /* Fondo transparente */  \n"
-"    border: none; /* Sin borde por defecto */  \n"
-"    border-bottom: 2px solid rgba(46, 82, 101, 0.8); /* Borde inferior con color */  \n"
-"    color: rgba(0, 0, 0, 0.94); /* Color del texto */  \n"
-"    padding-bottom: 20px; /* Espacio inferior dentro del QLineEdit */  \n"
-"")
+            "    background-color: rgba(0, 0, 0, 0); /* Fondo transparente */  \n"
+            "    border: none; /* Sin borde por defecto */  \n"
+            "    border-bottom: 2px solid rgba(46, 82, 101, 0.8); /* Borde inferior con color */  \n"
+            "    color: rgba(0, 0, 0, 0.94); /* Color del texto */  \n"
+            "    padding-bottom: 20px; /* Espacio inferior dentro del QLineEdit */  \n"
+            "")
         self.lineEdit_servicio.setText("")
         self.lineEdit_servicio.setObjectName("lineEdit_servicio")
         self.label_7 = QtWidgets.QLabel(self.widget)
