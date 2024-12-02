@@ -1,0 +1,14 @@
+# Ignorar archivos y carpetas generados por Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Ignorar entornos virtuales
+.venv/
+venv/
+env/
+*.env
+
+# Ignorar configuraciones específicas de cualquier versión de Python
+python*  # Archivos o carpetas que comiencen con 'python'
